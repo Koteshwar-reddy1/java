@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box File</title>
+</head>
+<body>
+    
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add and Delete List Items Dynamically</title>
+</head>
+<body>
+    <h1>Add and Display List Items with Delete Option</h1>
+
+    <input type="text" id="itemInput" placeholder="Enter list item" />
+    <button onclick="addItem()">Add Item</button>
+
+    <h3>Your Items:</h3>
+    <ul id="itemList"></ul>
+
+    <script>
+        function addItem() {
+            let input = document.getElementById('itemInput').value;
+            if (input !== '') {
+                let liUpper = document.createElement('li');
+                liUpper.textContent = input;
+
+                let deleteButton = document.createElement('button');
+                deleteButton.textContent = 'Delete';
+
+                liUpper.appendChild(deleteButton);
+
+                document.getElementById('itemList').appendChild(liUpper);
+
+                document.getElementById('itemInput').value = '';
+
+                deleteButton.addEventListener('click', () => {
+                    liUpper.remove();
+                });
+            } else {
+                alert('Please enter a valid item');
+            }
+        }
+    </script>
+</body>
+</html>

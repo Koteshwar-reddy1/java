@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manuplations</title>
+</head>
+<body>
+    <h1 id="title">Welcome</h1>
+    <h2 class="code1">codehelp1</h2>
+    <h2 class="code2">codehelp2</h2>
+    <h2 class="code3">codehelp3</h2>
+    <p>Paragraph1</p>
+    <p>Paragraph2</p>
+    <p>Paragraph3</p>
+    <script>
+        let element = document.getElementById("title")
+        element.style.background="red";
+        let element1 = document.getElementsByClassName("code1")
+        element1[0].style.background="blue";
+        let element2 = document.getElementsByTagName("p")
+        element2[0].style.background="green";
+    </script>
+</body>
+</html>

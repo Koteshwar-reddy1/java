@@ -1,0 +1,51 @@
+/* body{
+    font-size: 16px;
+    background-color: lightgray;
+}
+@media(min-width:600px){
+    body{
+        background-color: aqua;
+        font-size: 18px;
+    }
+}
+@media(min-width:1024px){
+    body{
+        background-color: lightgreen;
+        font-size: 20px;
+    }
+} */
+/* body{
+    font-size: 16px;
+    background-color: rgb(183, 15, 15);
+}
+@media(orientation:portrait){
+    body{
+        background-color: aqua;
+        font-size: 18px;
+    }
+}
+@media(orientation:landscape){
+    body{
+        background-color: lightgreen;
+        font-size: 20px;
+    }
+} */
+ a{
+    color: rgb(0, 30, 255);
+    text-decoration: none;
+ }
+ a:hover{
+    color: brown;
+ }
+a:focus{
+    color: green;
+    outline: none;
+}
+a:visited{
+    color: blueviolet;
+}
+h1{
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to left, rgb(224, 45, 45), rgb(255, 255, 0));
+}

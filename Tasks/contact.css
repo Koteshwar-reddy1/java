@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    
+    
+}
+body{
+    background-color: blanchedalmond;
+}
+.container{
+    background-color: blanchedalmond;
+    /* display: flex; */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.card{
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+    border-radius: 5px;
+    /* text-align: center; */
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 179, 0);
+    
+}
+button{
+    background-color: #858e00;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.contact-right {
+    float: right;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-top: 6px;
+    padding: 70px 20px 148px 20px;
+    font-size:1.2rem;
+    border-radius: 6px;
+    background-color: rgb(255, 208, 0);
+}

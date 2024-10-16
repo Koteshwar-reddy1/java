@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script >
+        // let animal= {
+        //     eats: "yes i eat"
+        // };
+        // let rabbit={
+        //     jumps:true
+        // }
+        // rabbit.__proto__=animal;
+        // console.log(rabbit.eats)
+        let animal= {
+            eats: "yes i eat" ,
+            walk(){
+                console.log("yes i can walk")
+            }
+        };
+        let rabbit={
+            jumps:true,
+            __proto__:animal
+        };
+        let bigEar={
+            earheight:21,
+            __proto__:rabbit
+        }
+        bigEar.walk()
+        console.log(rabbit.eats)
+        console.log(bigEar.walk)
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // createOrder(cart,function(orderId){
+      //     proceedToPayment(orderId,function(paymentInfo){
+      //         showOrderSummmary(paymentInfo,function(){
+      //            updateWalletBalance(balance);
+      //         });
+      //     });
+      // });
+
+      // createOrder(cart)
+      // .then(function(orderId){
+      //     return proceedToPayment(orderId);
+      // })
+      // .then(function(paymentInfo){
+      //     return showOrderSummmary(paymentInfo);
+      // })
+       // .then(function(balance){
+      //     return updateWalletBalance(balance);
+      // })
+
+      const promise= new Promise((resolve,reject)=>{
+       setTimeout(()=>{
+        // resolve("this is resolved in 3 seconds")
+        reject("this is resolved in 3 seconds")
+       },3000)
+      });
+      promise
+    //   .then(mess=>console.log(mess))
+      .catch(error=>console.log(error+"  fail"))
+    </script>
+  </body>
+</html>

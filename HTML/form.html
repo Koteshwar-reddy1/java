@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../Photos/creative-cool-monkey-vector-illustration-clipart.jpg" style="width: 100px;height: 100px;" type="logo">
+    <title>Signup Form</title>
+  </head>
+  <body>
+    <div class="container" style="border: 2px solid black ;width: 50%;margin: 20px;padding: 20px;">
+     <form >
+        <h1>Student Form</h1>
+        <label>Name:</label>
+        <input type="text" placeholder="Enter Your Name" required /> <br /><br />
+        <label>Date of Birth:</label>
+        <input type="date" /><br /><br />
+        <label>Age:</label>
+        <input type="number" placeholder="Enter your Age" required /><br /><br />
+        <label>College Name:</label>
+        <input type="text" placeholder="Enter your College Name" required /><br /><br />
+        <label>Phone number:</label>
+        <input type="number" placeholder="Enter your Number" required/><br /><br />
+        <fieldset style="width: 20%">
+          <legend>Gender:</legend>
+          <input type="radio" id="male" value="male" name="gender" />
+          <label>Male</label><br />
+          <input type="radio" id="female" value="female" name="gender" />
+          <label>Female</label>
+        </fieldset>
+        <br /><br />
+        <fieldset style="width: 30%">
+          <legend>Skills:</legend>
+          <input type="checkbox" id="HTML" name="Skills" />
+          <label>HTML</label><br />
+          <input type="checkbox" id="Java" name="Skills" />
+          <label>Java</label><br />
+          <input type="checkbox" id="CSS" name="Skills" />
+          <label>CSS</label><br />
+          <input type="checkbox" id="Python" name="Skills" />
+          <label>Python</label>
+        </fieldset>
+        <br /><br />
+        <!--Dropdown-->
+        <label for="role">Select Role:</label>
+        <select name="role" id="role">
+          <option value="student">Student</option>
+          <option value="Employee">Employee</option>
+        </select>
+        <br /><br />
+        <!--Resume upload-->
+        <label>Resume:</label>
+        <input
+          type="file"
+          id="Resume"
+          name="Resume"
+          accept=".pdf,.dox,.doc"
+          required
+        />
+        <br /><br />
+        <!--Email-->
+        <label for="email">Email:</label><br />
+        <textarea name="email" id="email"></textarea><br /><br />
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+        <br /><br />
+        <!--Note-->
+        <label for="Note">Note:</label><br />
+        <textarea name="Note" id="Note"></textarea>
+        <br><br>
+        <button style=" color: white; background-color: rgb(0, 94, 255);">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class Car {
+        constructor(brand, model) {
+          this.brand = brand;
+          this.model = model;
+        }
+        Start() {
+          console.log(`${this.brand} ${this.model} Start`);
+        }
+        Drive() {
+          console.log("Drive");
+        }
+      }
+      const obj = new Car("bmw", "xxx");
+      obj.Start();
+      class ElectricCar extends Car {
+        constructor(brand,model,batteryCapacity) {
+            super(brand,model)
+          this.Ev = batteryCapacity;
+        }
+        Capacity(){
+            console.log(`${this.brand} ${this.model} ${this.Ev} is good`);
+        }
+      }
+      const ev = new ElectricCar("bmw", "xxx","Ev");
+      ev.Capacity();
+    </script>
+  </body>
+</html>

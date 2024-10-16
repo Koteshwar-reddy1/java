@@ -1,0 +1,15 @@
+body{
+background-color: aqua;
+}
+.Container{
+    background-color: rgba(165, 42, 42, 0.276);
+}
+#myId{
+    background-color: rgba(0, 0, 255, 0.605); color: aliceblue;
+}
+#myPara{
+    background-color: bisque; font-weight: 700; font-style: italic;
+}
+.myCls{
+    background-color: orange;
+}

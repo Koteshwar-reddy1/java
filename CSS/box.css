@@ -1,0 +1,11 @@
+.cont{
+    display: flex;
+}
+.cont div{
+    padding: 20px;
+    background-color: lightcoral;
+    margin: 5px;
+}
+.box2{
+flex-grow: 2;
+}

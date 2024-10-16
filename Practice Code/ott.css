@@ -1,0 +1,144 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0%;
+  padding: 0;
+  background-color: #ffffffba;
+  color: #fffbfb;
+
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+header  {
+  background-color: #000;
+  padding: 10px 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  text-align: center;
+  position: relative;
+  width: 80%;
+  
+}
+
+h1 {
+  margin: 0%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: absolute;
+  left: 0%;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+  position: relative;
+  left: 200%;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+ 
+}
+.search{
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 200px;
+}
+
+#movie-row {
+  display: flex;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 5px;
+  width: 111.7%;
+  margin: 0%;
+  background-color: #828149;
+  border-radius:30px ;
+  
+}
+.movie:hover{
+  transform: scale(1.05);
+  transition: 0.5sec;
+}
+.series:hover{
+  transform: scale(1.05);
+  transition: 0.5sec;
+}
+#series-row {
+  display: flex;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 3px;
+  background-color: #fffff6;
+  width: 100%;
+  margin: 0%;
+  padding: 0% 0% 0% 0%;
+ 
+}
+.container{
+  color: #000;
+}
+
+.movie {
+  background-color: #33333318;
+  padding: 20px;
+  text-align: center;
+  color: #000000;
+  border-radius:30px ;
+}
+.series {
+  background-color: #ffffff;
+  padding:0px 0px 0px 0px;
+  width: 593px;
+  margin: 0%;
+  text-align: center;
+  color: #0d0d0d;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  box-shadow: #000;
+}
+iframe{
+    padding: 0px;
+}
+
+footer {
+  background-color: #000;
+  text-align: center;
+  justify-content: center;
+  padding: 10px 200px;
+  width: 80%;
+}
+#movies{
+  display: flex;
+background-color: #828149;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 3rem;
+  width: 60%;
+  color: #9f0606d5;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius:30px ;
+}
+#series{
+  display: flex;
+background-color: #828149;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 3rem;
+  width: 60%;
+  color: #9f0606d5;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius:30px ;
+}
